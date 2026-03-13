@@ -1,5 +1,4 @@
-let playlist = ('Liar', 'All They Wanted','I Dont Wanna Love','Cure for Pain');
-let deleted = ""
+let playlist = ['Liar', 'All They Wanted','I Dont Wanna Love','Cure for Pain'];
 alert("Your current playlist contains: "+playlist);
 let addsong = prompt("Would you like to add a song?");
 playlist.push(addsong);
@@ -12,7 +11,7 @@ if(playlist.includes(search)){
     let i = playlist.indexOf(search)
     deleted = prompt("Would you like to delete this song?")
     let z =(deleted=="yes")? playlist.splice(i,1): console.log('Nothing Deleted');
-    ;
 } else {
-    alert("Song not found :(")
+    alert("Song not found :(");
+}
 alert("Your current playlist contains: "+playlist);
